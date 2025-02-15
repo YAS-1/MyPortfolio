@@ -139,7 +139,11 @@
 
 #con-5 td{
     padding: 10px; 
-    border: 1px solid black
+    border: 2px solid black
+}
+
+#con-5 tr:hover{
+    background-color: #acd9f4;
 }
 
 #foot{
