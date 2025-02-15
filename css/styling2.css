@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background: #f4f4f4; */
+    background-color: rgb(2, 66, 78);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+  }
+
+  #container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+
+  #name {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  #con-1 {
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  #con-1-1{
+    background: linear-gradient(to right, #0591e8, #61ddf3);
+  }
+
+  #intro{
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  #con-1-1{
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 0px 3px 3px grey;
+  }
+
+  #introStatement{
+    font-size: 1em;
+    text-align:left;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  #con-2{
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    align-items: center;
+    justify-content: center;
+    font-size: xl;
+    padding: 50px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 0px 3px 3px silver;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #3fabef, #03a7bc);
+  }
+
+  #con-2-1 h2{
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  #con-3{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  #con-3 h2{
+    text-decoration: underline;
+  }
+
+
+  #con-4{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  #con-4 h3{
+    padding-top: 15px;
+    padding-bottom: none;
+  }
+
+#divide{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#con-5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#con-5 table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#con-5 th{
+    padding: 10px; 
+    background: linear-gradient(to right, #3fabef, #53b2ed); 
+    border: 1px solid black
+}
+
+#con-5 td{
+    padding: 10px; 
+    border: 1px solid black
+}
+
+#foot{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    color: white;
+    background-color: rgb(70, 68, 68);
+}
+ a{
+    color: #0591e8;
+ }
