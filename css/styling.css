@@ -1,0 +1,459 @@
+/* Base styles and resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+    color: #2c3e50;
+}
+
+/* Container styling and animation */
+#container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Header styling and animations */
+#name {
+    font-size: 2.5rem;
+    color: #1a237e;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    transform: translateY(-30px);
+    opacity: 0;
+    animation: slideDown 0.8s ease-out 0.5s forwards;
+}
+
+/* Profile section styling and animations */
+#con-1 {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    opacity: 0;
+    animation: fadeIn 1s ease-out 1s forwards, float 6s ease-in-out infinite;
+}
+
+#profile img {
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+#profile img:hover {
+    transform: scale(1.08) rotate(5deg);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+    animation: none;
+}
+
+/* Skills and details styling and animations */
+#con-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+#con-2-1 {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    opacity: 0;
+    transform: translateX(-20px);
+    animation: slideIn 0.8s ease-out forwards;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+#con-2-1:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+#con-3{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+#con-3 h2{
+    text-decoration: underline;
+  }
+
+#foot{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    color: white;
+    background-color: rgb(70, 68, 68);
+    font-size: medium;
+    transition: background-color 0.3s ease;
+}
+
+#foot:hover {
+    background-color: rgb(60, 58, 58);
+}
+
+/* Links and contact styling */
+#Links a, #contactInfo a {
+    position: relative;
+    text-decoration: none;
+    color: #2196f3;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+}
+
+#Links a::after, #contactInfo a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: #1565c0;
+    transition: width 0.3s ease;
+}
+
+#Links a:hover, #contactInfo a:hover {
+    color: #1565c0;
+    transform: translateX(5px);
+    text-shadow: 0 0 8px rgba(33, 150, 243, 0.5);
+}
+
+#Links a:hover::after, #contactInfo a:hover::after {
+    width: 100%;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transform: translateY(20px);
+    opacity: 0;
+    animation: slideUp 0.8s ease-out 1.2s forwards;
+}
+
+table th {
+    background: #1a237e;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: left;
+}
+
+table td {
+    padding: 1rem;
+    border-bottom: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+table tr {
+    transition: all 0.3s ease;
+}
+
+table tr:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.01);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Video container styling and animation */
+#con-4 {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 0.8s ease-out 1.8s forwards;
+    transition: all 0.4s ease;
+    border: 1px solid transparent;
+}
+
+#con-4:hover {
+    border-color: #2196f3;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(33, 150, 243, 0.2);
+}
+
+/* Divider styling */
+#divide {
+    height: 3px;
+    background: linear-gradient(90deg, #1a237e, #2196f3);
+    margin: 2rem 0;
+    border-radius: 3px;
+    width: 0;
+    animation: expandWidth 1s ease-out 0.8s forwards;
+    position: relative;
+    overflow: hidden;
+}
+
+#divide::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+    );
+    animation: shine 3s infinite;
+}
+
+/* Button styling */
+button {
+    background: linear-gradient(135deg, #1a237e, #2196f3);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(33, 150, 243, 0.4);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: width 0.6s ease, height 0.6s ease;
+    transform: translate(-50%, -50%);
+}
+
+button:hover::after {
+    width: 200%;
+    height: 200%;
+}
+
+/* Animation keyframes */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes expandWidth {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        transform: scale(1.03);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes shine {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 200%;
+    }
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    #container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    #con-2 {
+        grid-template-columns: 1fr;
+    }
+
+    #name {
+        font-size: 2rem;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1a237e;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2196f3;
+}
+
+/* Add focus states for better accessibility */
+button:focus, 
+a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.4);
+}
+
+/* Add loading animation for images */
+img {
+    position: relative;
+}
+
+img.loading {
+    animation: shimmer 1.5s infinite;
+    background: linear-gradient(
+        90deg,
+        #f0f0f0 0%,
+        #f8f8f8 50%,
+        #f0f0f0 100%
+    );
+    background-size: 200% 100%;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* Add scroll reveal animation */
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.scroll-reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Add 3D perspective hover effect to cards */
+.card {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.card:hover {
+    transform: rotateX(5deg) rotateY(5deg);
+    transition: transform 0.3s ease;
+}
+
+/* Add gradient border animation */
+@keyframes borderGradient {
+    0% {
+        border-image-source: linear-gradient(45deg, #1a237e, #2196f3);
+    }
+    50% {
+        border-image-source: linear-gradient(45deg, #2196f3, #1a237e);
+    }
+    100% {
+        border-image-source: linear-gradient(45deg, #1a237e, #2196f3);
+    }
+}
+
+.gradient-border {
+    border: 3px solid;
+    border-image-slice: 1;
+    animation: borderGradient 3s infinite;
+}
